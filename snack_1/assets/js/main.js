@@ -66,3 +66,11 @@ const zucchine = [
         lunghezza: 15,
     },
 ]
+console.log(zucchine);
+
+let res = 0;
+zucchine.forEach(element => {
+    res += element.peso;
+});
+
+console.log(`Il peso totale delle zucchine è di: ${res.toFixed(2)} kg`);
